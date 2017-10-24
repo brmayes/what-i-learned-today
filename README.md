@@ -71,8 +71,20 @@ df.replace({'borrow_amt': {'<5K':'<10K','5K to 10K':'<10K'}}).groupby('borrow_am
 Here's an example on [Stack Overflow](https://stackoverflow.com/questions/37947479/pandas-sum-two-rows-of-dataframe-without-rearranging-dataframe).
 
 ### 10-23-17
-Topics: QGIS
+Topics: QGIS, locator maps
 
 To add a singular point at an exact coordinate, make a CSV with name/lat/long. Then, just import into QGIS as a delimited text layer.
 
 To add a radius around a specific point or shape, use a buffer. To do so with a simple plugin, use `MMQGIS`. For more go [here](https://gis.stackexchange.com/questions/29509/how-to-draw-a-circle-with-a-set-radius).
+
+To export a map, use the map composer. Here's a nice [walkthrough](http://docs.qgis.org/2.0/da/docs/training_manual/map_composer/map_composer.html).
+
+### 10-24-17
+Topics: Illustrator, locator maps, SVG, QGIS, regex
+
+After exporting from QGIS to a SVG, you can make updates and style changes to the map in Illustrator. Biggest thing I've learned: **SAVE ALL WORK AS AN AI FILE BEFORE MAKING EDITS**. If you continually save as an SVG and close the file, Illustrator will have a hard time opening it after encoding it to open in inkscape. But, if that does happen and you can't open the file in Illustrator, open the SVG using a text editor and use a regex to take out inkscape instances.
+
+To fix SVG code:
+```
+inkscape:[^"]+"[^"]+"
+```
