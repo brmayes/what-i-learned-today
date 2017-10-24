@@ -69,3 +69,10 @@ df.replace({'borrow_amt': {'<5K':'<10K','5K to 10K':'<10K'}}).groupby('borrow_am
 ```
 
 Here's an example on [Stack Overflow](https://stackoverflow.com/questions/37947479/pandas-sum-two-rows-of-dataframe-without-rearranging-dataframe).
+
+### 10-23-17
+Topics: QGIS
+
+To add a singular point at an exact coordinate, make a CSV with name/lat/long. Then, just import into QGIS as a delimited text layer.
+
+To add a radius around a specific point or shape, use a buffer. To do so with a simple plugin, use `MMQGIS`. For more go [here](https://gis.stackexchange.com/questions/29509/how-to-draw-a-circle-with-a-set-radius).
