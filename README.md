@@ -88,3 +88,28 @@ To fix SVG code:
 ```
 inkscape:[^"]+"[^"]+"
 ```
+
+### 11-3-17
+Topics: Pip
+
+If you're getting a weird `Command "python setup.py egg_info" failed with error code 1` error when trying to use `pip install`, it's because something isn't up to date with pip.
+
+To fix, you'll need to upgrade `Setuptools`:
+```
+pip install --upgrade setuptools
+```
+
+Then, just try to install the software again.
+
+### 12-1-17
+Topics: jupyter, chrome
+
+If you're getting a message like...
+
+```
+0:97: execution error: "http://localhost:8888/tree?token=[RANDOM_TOKEN_KEY_HERE]" doesn’t understand the “open location” message. (-1708)
+```
+
+...that means that when you type `jupyter notebook` in your terminal and it doesn't automatically open in chrome, there's a simple solution!
+
+Open your `~/.bash_profile` and add `export BROWSER=open`. Source it and try to open your jupyter notebook again from the command line! 
