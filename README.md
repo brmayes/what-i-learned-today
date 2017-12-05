@@ -1,5 +1,16 @@
 # what-i-learned-today
 
+### 12-5-17
+Topics: jupyter, python
+
+To export your notebook to a python script, use `nbconvert`:
+
+```
+jupyter nbconvert --to script [NOTBOOK_NAME].ipynb
+```
+
+There are other options as well. Check the docs [here](http://nbconvert.readthedocs.io/en/stable/usage.html#).
+
 ### 12-1-17
 Topics: jupyter, chrome
 
