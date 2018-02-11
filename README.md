@@ -1,5 +1,16 @@
 # what-i-learned-today
 
+### 2-11-18
+Topics: MacOS, Ruby, xCode
+
+If running `xcode-select --install` gives you an error that it "can't download the software because of a network problem", run:
+
+```
+sudo defaults delete /Library/Preferences/com.apple.SoftwareUpdate CatalogURL
+```
+
+Source: Nokogiri(http://www.nokogiri.org/tutorials/installing_nokogiri.html)
+
 ### 12-5-17
 Topics: jupyter, python
 
