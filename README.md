@@ -1,5 +1,20 @@
 # what-i-learned-today
 
+### 4-25-18
+Topics: jupyter, python
+
+If you need to export a json file with nested elements, you can use this:
+
+```
+json = (df.groupby(['TOP_LEVEL','TOP_LEVEL_1','TOP_LEVEL_2'], as_index=False)
+                 .apply(lambda x: x[['SECOND_LEVEL','SECOND_LEVEL_2']].to_dict('r'))
+                 .reset_index()
+                 .rename(columns={0:'SECOND_LEVEL_OBJ_NAME'})
+                 .to_json(orient='records'))
+```
+
+Get a more in-depth explanation [here](https://stackoverflow.com/questions/40470954/convert-pandas-dataframe-to-nested-json?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa).
+
 ### 2-11-18
 Topics: MacOS, Ruby, xCode
 
