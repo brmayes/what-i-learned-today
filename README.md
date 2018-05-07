@@ -1,5 +1,17 @@
 # what-i-learned-today
 
+### 5-7-18
+Topics: Topojson
+
+To convert geojson to topojson:
+
+```
+npm install topojson-server
+geo2topo input.geojson > output.topojson
+```
+
+([Source](https://gis.stackexchange.com/questions/45138/convert-geojson-to-topojson?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa))
+
 ### 4-25-18
 Topics: jupyter, python
 
