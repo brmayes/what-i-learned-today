@@ -1,5 +1,14 @@
 # what-i-learned-today
 
+### 7-31-18
+Topics: github, terminal
+
+When trying to interact with a github repo, you might be prompted to enter your username and password. If your normal login isn't working, it's probably because github is looking for you to enter your personal access token if the repo or org you're working with is set up that way.
+
+To find it: `Settings > Developer settings > Personal access token`
+
+([Source](https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8))
+
 ### 5-7-18
 Topics: Topojson
 
